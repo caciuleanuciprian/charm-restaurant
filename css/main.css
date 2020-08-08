@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans&family=Josefin+Slab&display=swap');
+
+:root{
+    --gray: #1E1E1E;
+    --black: #111111;
+    --white: #e0e0e0;
+    --title: 'Josefin Sans', sans-serif;
+    --paragraph: 'Josefin Slab', serif;
+    --elegant: 'Great Vibes', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Landing Page */
+
+main .landing-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+main .landing-page .video-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+main .landing-page .video-wrapper video{
+    object-fit: cover;
+}
+
+main .landing-page .video-wrapper .video-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1;
+    top: 0;
+}
+
+main .landing-page h1{
+    z-index: 2;
+    color: var(--white);
+    font-family: var(--elegant);
+    font-size: 128px;
+    margin-bottom: -20px;
+}
+
+main .landing-page p{
+    z-index: 2;
+    color: var(--white);
+    font-family: var(--paragraph);
+    font-size: 24px;
+}
+
+main .landing-page button.reservationBtn{
+    z-index: 2;
+    margin: 48px 0px 24px 0px;
+    padding: 12px;
+    font-family: var(--title);
+    font-size: 24px;
+    color: var(--white);
+    background-color: transparent;
+    border: transparent;   
+    transition: 0.5s ease;
+    border: 2px var(--white) solid;
+}
+
+main .landing-page button.reservationBtn a{
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--white);
+}
+
+main .landing-page button.reservationBtn:hover{
+    background-color: var(--white);
+    color: var(--gray);
+    transform: scale(1.1);
+}
+
+main .landing-page button.reservationBtn a:hover{
+    color: var(--gray);
+}
+
+main .landing-page img{
+    z-index: 2;
+    margin: 12px 0px;
+    width: 200px;
+    height: auto;
+}
+
