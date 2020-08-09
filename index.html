@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charm - Restaurant & Lounge</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
 </head>
 <body>
@@ -12,11 +13,24 @@
     <main>
 
         <!-- Navigation -->
-
-        <nav>
-
-        </nav>
-
+        <div class="nav-overlay" id="notsticky">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./src/photo/other/logo.png">
+                </a>
+            </div>
+            <i class="fas fa-hamburger" class="open-nav" onclick="openNavigation()"></i>
+            <div class="nav-overlay-content" id="nav">
+                <i class="fas fa-times" class="close-nav" id="itag" onclick="closeNavigation()"></i> 
+                <div class="nav-container" id="navcontainer">
+                <a href="#home" onclick="closeNavigation()">Home</a>
+                <a href="#about" onclick="closeNavigation()">About us</a>
+                <a href="#menu" onclick="closeNavigation()">Menu</a>
+                <a href="#gallery" onclick="closeNavigation()">Gallery</a>
+                <a href="#reservation" onclick="closeNavigation()">Reservation</a>
+                </div>
+            </div>
+        </div>
         <!-- Landing Page -->
 
         <div class="landing-page" id="home">
@@ -33,7 +47,7 @@
 
         <!-- About Us Section -->
 
-        <div class="container">
+        <div class="container" id="about">
             <div class="text-container">
                 <h1>Welcome</h1>
                 <h2>To our restaurant</h2>
@@ -53,7 +67,7 @@
         <!-- Parallax Container -->
 
 
-        <div class="parallax-container">
+        <div class="parallax-container" id="menu">
             <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="./src/photo/large/food.jpg">
                 <div class="parallax-cover"></div>
                 

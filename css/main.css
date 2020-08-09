@@ -16,10 +16,115 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
     z-index: 1;
+}
+
+/* Logo */
+
+.logo{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 5;
+    margin: 24px;
+}
+
+.logo a img{
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+    transition: 0.3s ease;
+}
+
+.logo a img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Navigation */
+
+.nav-overlay{
+    transition: 0.3s ease-in-out;
+}
+
+.nav-overlay i{
+    position: absolute;
+    display: block;
+    right: 0px;
+    color: var(--white);
+    z-index: 5;
+    margin: 36px;
+    font-size: 36px;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.nav-overlay i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.nav-overlay .nav-overlay-content,
+.nav-overlay .nav-overlay-content .nav-container a,
+.nav-overlay .nav-overlay-content .close-nav{
+    display: none;
+}
+
+.nav-overlay .nav-overlay-content.active{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav-overlay .nav-overlay-content.active i{
+    align-self: flex-start;
+}
+
+.nav-overlay .nav-overlay-content.active .nav-container{
+    width: 100%;
+}
+
+.nav-overlay .nav-overlay-content.active .nav-container a{
+    text-align: center;
+    margin: 72px 0px;
+    width: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: var(--title);
+    text-decoration: none;
+    font-size: 72px;
+    color: var(--white);
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+
+.nav-overlay .nav-overlay-content.active .nav-container a:hover{
+    background-color: var(--white);
+    color: var(--gray);
+    opacity: 1;
+}
+
+.nav-overlay.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 15;
+    background-color: var(--gray);
+    transition: 0.3s ease-in-out;
 }
 
 /* Landing Page */
@@ -182,7 +287,7 @@ main .landing-page img{
 .parallax-container .parallax-window .parallax-cover{
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: var(--black);
     opacity: 0.5;
     z-index: 2;
     position: absolute;
