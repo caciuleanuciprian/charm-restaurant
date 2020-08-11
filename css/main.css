@@ -15,7 +15,6 @@
 }
 
 html{
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -130,26 +129,29 @@ body{
 /* Landing Page */
 
 main .landing-page{
+    margin: 0px;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100vw;
+    flex-wrap: wrap;
     height: 100vh;
 }
 
 main .landing-page .video-wrapper{
+    margin: 0px;
+    padding: 0px;
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: black;
 }
 
 main .landing-page .video-wrapper video{
     object-fit: cover;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 main .landing-page .video-wrapper .video-overlay{
@@ -218,14 +220,13 @@ main .landing-page img{
 .container{
     margin: 24px auto;
     display: flex;
-    width: 100vw;
-    height: 300px;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .container .text-container{
@@ -272,7 +273,6 @@ main .landing-page img{
     position: relative;
     display: flex;
     height: 200px;
-    width: 100vw;
     justify-content: center;
     align-items: center;
 }
@@ -280,7 +280,7 @@ main .landing-page img{
 .parallax-container .parallax-window{
     position: absolute;
     background: transparent;
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 
@@ -306,4 +306,58 @@ main .landing-page img{
 .menu-container{
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.menu-container .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu-container .row{
+    margin: 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-container .row .col{
+    float: left;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.menu-container .row .col h1{
+    align-self: center;
+    font-family: var(--elegant);
+    font-size: 36px;
+}
+
+.menu-container .row .col .food-card{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.menu-container .row .col .food-card .food-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: var(--title);
+    font-size: 24px;
+}
+
+.menu-container .row .col .food-card .food-main .dots{
+    border-bottom: 2px dotted var(--black);
+    flex-grow: 1;
+    
+}
+
+.menu-container .row .col .food-card .food-description{
+    font-family: var(--paragraph);
+    margin: 10px;
+    font-size: 14px;
 }
