@@ -304,8 +304,8 @@ main .landing-page img{
 /* Menu Section */
 
 .menu-container{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .menu-container .row:after{
@@ -360,4 +360,90 @@ main .landing-page img{
     font-family: var(--paragraph);
     margin: 10px;
     font-size: 14px;
+}
+
+/* Gallery Section */
+
+.gallery{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-container{
+    display: grid;
+    column-gap: 25px;
+    row-gap: 25px;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 500px 500px 500px;
+    grid-template-areas:
+    "a b b"
+    "a d c"
+    "e e c"
+    ;
+}
+
+.item-a img, .item-b img, .item-c img, .item-d img, .item-e img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.gallery-container .item-a{
+    grid-area: a;
+    transition: ease 0.5s;
+    
+}
+
+.gallery-container .item-a:hover{
+    transform: scale(1.02);
+    transition: ease 0.5s;
+}
+
+.gallery-container .item-b{
+    grid-area: b;
+    transition: ease 0.5s;
+    
+}
+
+.gallery-container .item-b:hover{
+    transform: scale(1.02);
+    transition: ease 0.5s;
+}
+
+.gallery-container .item-c{
+    grid-area: c;
+    transition: ease 0.5s;
+    
+}
+
+.gallery-container .item-c:hover{
+    transform: scale(1.02);
+    transition: ease 0.5s;
+}
+
+.gallery-container .item-d{
+    grid-area: d;
+    transition: ease 0.5s;
+   
+}
+
+.gallery-container .item-d:hover{
+    transform: scale(1.02);
+    transition: ease 0.5s;
+}
+
+.gallery-container .item-e{
+    grid-area: e;
+    transition: ease 0.5s;
+    
+}
+
+.gallery-container .item-e:hover{
+    transform: scale(1.02);
+    transition: ease 0.5s;
 }
