@@ -122,7 +122,6 @@ body{
     width: 100%;
     height: 100px;
     z-index: 15;
-    background-color: var(--gray);
     transition: 0.3s ease-in-out;
 }
 
@@ -446,4 +445,137 @@ main .landing-page img{
 .gallery-container .item-e:hover{
     transform: scale(1.02);
     transition: ease 0.5s;
+}
+
+/* Reservation Section */
+
+.reservation{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/src/photo/large/landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reservation-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--black);
+    opacity: 0.8;
+}
+
+.reservation h1{
+    z-index: 2;
+    color: var(--white);
+    font-family: var(--elegant);
+    font-size: 72px;
+    margin-top: 60px;
+}
+
+.reservation form{
+    margin-top: 5px;
+    z-index: 2;
+    width: 300px;
+}
+
+.reservation form .item p{
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--title);
+}
+
+.reservation form .item input{
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    font-family: var(--title);
+    font-size: 14px;
+    color: #e0e0e0;
+    transition: ease 0.3s;
+}
+
+.reservation form .item input:focus{
+    color: var(--black);
+    transform: scale(1.05);
+    transition: ease 0.3s;
+}
+
+.reservation form .item input::placeholder{
+    font-family: var(--title);
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.reservation form textarea{
+    width: 100%;
+    height: 50px;
+    resize: none;
+    padding: 10px 10px 10px 10px;
+    transition: 0.3s ease;
+}
+
+.reservation form textarea:focus{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.reservation form .btn{
+    margin-top: 10px;
+    text-align: center;
+}
+.reservation form .btn button{
+    padding: 10px 30px;
+    width: 50%;
+    color: var(--white);
+    font-family: var(--title);
+    font-size: 24px;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    transition: 0.3s ease;
+}
+
+.reservation form .btn button:hover{
+    color: var(--black);
+    background-color: var(--white);
+    transition: 0.3s ease;
+}
+
+/* Footer section */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    padding: 30px 0px 30px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .address h4{
+    color: var(--white);
+    font-family: var(--title);
+    font-size: 36px;
+    text-align: center;
+}
+
+footer .address h4 i{
+    margin: 10px 0px;
+}
+
+footer .address p{
+    color: var(--white);
+    font-family: var(--paragraph);
+    font-size: 18px;
+}
+
+footer i{
+    font-size: 36px;
+    margin: 15px;
+    color: var(--white);
 }
