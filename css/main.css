@@ -453,7 +453,7 @@ main .landing-page img{
     display: flex;
     height: 100vh;
     width: 100%;
-    background-image: url(/src/photo/large/landing.jpg);
+    background-image: url("/src/photo/large/landing.jpg");
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
