@@ -539,6 +539,7 @@ main .landing-page img{
     margin-top: 10px;
     text-align: center;
 }
+
 .reservation form .btn button{
     padding: 10px 30px;
     width: 50%;
@@ -588,4 +589,262 @@ footer i{
     font-size: 36px;
     margin: 15px;
     color: var(--white);
+}
+
+/* Responsive */
+
+/* 4K Monitors */
+
+@media only screen and (min-width: 1441px){
+    .menu-container .row .col hr{
+        width: 5%;
+        align-self: center;
+    }
+}
+
+/* Laptops */
+
+@media only screen and (max-width: 1440px){
+
+    .gallery-container{
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas:
+    "a b b"
+    "a d c"
+    "e e c"
+    ;}
+
+    .menu-container .row .col hr{
+        width: 10%;
+        align-self: center;
+    }
+
+
+}
+
+/* Tablets and small laptops */
+
+@media only screen and (max-width: 1024px){
+
+    .gallery-container{
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas:
+        "a b b"
+        "a d c"
+        "e e c"
+        ;}
+
+    .menu-container .row .col{
+        float: left;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .menu-container .row .col hr{
+        width: 5%;
+        align-self: center;
+    }
+
+}
+
+/* Tablets */
+
+@media only screen and (max-width: 768px){
+    .gallery-container{
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas:
+        "a b b"
+        "a d c"
+        "e e c"
+        ;}
+
+    .container{
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .menu-container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .gallery{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .container .text-container{
+        width: 80%;
+    }
+
+    .container .text-container h1, h2{
+        text-align: center;
+    }
+
+    .container .text-container hr{
+        margin: 0 auto;
+        margin-bottom: 25px;
+        width: 5%;
+    }
+
+    .container img{
+        width: 450px;
+        height: 500px;
+    }
+
+}
+
+/* Large Phones */
+
+@media only screen and (max-width: 425px){
+
+    main .landing-page h1{
+        font-size: 96px;
+    }
+
+    main .landing-page button.reservationBtn{
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .parallax-container h1{
+        font-size: 48px;
+    }
+
+    .nav-overlay .nav-overlay-content.active .nav-container a{
+        font-size: 36px;
+        margin: 36px 0px;
+    }
+
+    .container img{
+        width: 250px;
+        height: 300px;
+    }
+
+    .menu-container .row .col .food-card .food-main{
+        font-size: 18px;
+    }
+
+    .menu-container .row .col .food-card .food-description{
+        margin: 10px 0px 0px 0px;
+        font-size: 12px;
+    }
+
+    .gallery-container{
+        column-gap: 0px;
+        grid-template-columns: 200px 100px;
+        grid-template-rows: 200px 200px 200px 200px 200px;
+        grid-template-areas:
+        "a a"
+        "b b"
+        "c c"
+        "d d"
+        "e e"
+        ;
+        
+    }
+
+    .menu-container .row .col{
+        float: left;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .item-a img, .item-b img, .item-c img, .item-d img, .item-e img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .reservation h1{
+        font-size: 36px;
+    }
+
+    .reservation form .item p{
+        font-size: 12px;
+    }
+
+    .reservation form .item input{
+        padding: 5px 5px 5px 5px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .reservation form .item input::placeholder{
+        font-size: 12px;
+    }
+
+    .reservation form textarea{
+        padding: 5px 5px 5px 5px;
+    }
+
+    .reservation form .btn button{
+        padding: 5px 15px;
+        width: 35%;
+        font-size: 18px;
+    }
+
+    footer{
+        padding: 20px 0px 20px 0px;
+    }
+
+    footer .address h4{
+        font-size: 18px;
+    }
+
+    footer .address h4 i{
+        font-size: 18px;
+    }
+
+    footer .address p{
+        font-size: 14px;
+    }
+
+    footer .social i{
+        font-size: 18px;
+    }
+}
+
+/* Small Phones */
+
+@media only screen and (max-width: 320px){
+    .container .text-container p{
+        font-size: 18px;
+    }
+
+    .container img{
+        width: 200px;
+        height: 250px;
+    }
+
+    .parallax-container{
+        height: 150px;
+    }
+
+    .menu-container .row .col .food-card .food-main h4{
+        font-size: 13px;
+    }
+
+    .menu-container .row .col .food-card .food-description p{
+        font-size: 12px;
+        width: 105%;
+    }
+
+    .reservation form .item input{
+        padding: 5px 0px 5px 0px;
+    }
+
+    .reservation form textarea{
+        padding: 5px 0px 5px 0px;
+    }
 }
