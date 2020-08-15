@@ -396,56 +396,71 @@ main .landing-page img{
 .gallery-container .item-a{
     grid-area: a;
     transition: ease 0.5s;
-    
+    filter: saturate(0);
+    opacity: 0.9;
 }
 
 .gallery-container .item-a:hover{
     transform: scale(1.02);
     transition: ease 0.5s;
+    filter: saturate(1);
+    opacity: 1;
 }
 
 .gallery-container .item-b{
     grid-area: b;
     transition: ease 0.5s;
-    
+    filter: saturate(0);
+    opacity: 0.9;
 }
 
 .gallery-container .item-b:hover{
     transform: scale(1.02);
     transition: ease 0.5s;
+    filter: saturate(1);
+    opacity: 1;
 }
 
 .gallery-container .item-c{
     grid-area: c;
     transition: ease 0.5s;
-    
+    filter: saturate(0);
+    opacity: 0.9;
 }
 
 .gallery-container .item-c:hover{
     transform: scale(1.02);
     transition: ease 0.5s;
+    filter: saturate(1);
+    opacity: 1;
 }
 
 .gallery-container .item-d{
     grid-area: d;
     transition: ease 0.5s;
-   
+    filter: saturate(0);
+    opacity: 0.9;
 }
 
 .gallery-container .item-d:hover{
     transform: scale(1.02);
     transition: ease 0.5s;
+    filter: saturate(1);
+    opacity: 1;
 }
 
 .gallery-container .item-e{
     grid-area: e;
     transition: ease 0.5s;
-    
+    filter: saturate(0);
+    opacity: 0.9;
 }
 
 .gallery-container .item-e:hover{
     transform: scale(1.02);
     transition: ease 0.5s;
+    filter: saturate(1);
+    opacity: 1;
 }
 
 /* Reservation Section */
