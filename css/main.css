@@ -619,6 +619,7 @@ footer i{
     .menu-container .row .col hr{
         width: 10%;
         align-self: center;
+        background-color: var(--gray);
     }
 
 
