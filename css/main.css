@@ -251,8 +251,9 @@ main .landing-page img{
 .container .text-container hr{
     width: 5%;
     height: 2px;
-    background-color: var(--gray);
     margin: -12px 0px 12px 0px;
+    background-color: var(--gray);
+    border: none;
 }
 
 .container .text-container p{
@@ -598,8 +599,10 @@ footer i{
 @media only screen and (min-width: 1441px){
     .menu-container .row .col hr{
         width: 5%;
+        height: 2px;
         align-self: center;
         background-color: var(--gray);
+        border: none;
     }
 }
 
@@ -618,8 +621,10 @@ footer i{
 
     .menu-container .row .col hr{
         width: 10%;
+        height: 2px;
         align-self: center;
         background-color: var(--gray);
+        border: none;
     }
 
 
