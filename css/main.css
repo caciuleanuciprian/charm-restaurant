@@ -669,6 +669,11 @@ footer i{
         border: none;
     }
 
+    .nav-overlay .nav-overlay-content.active .nav-container a{
+        font-size: 48px;
+        margin: 48px 0px;
+    }
+
 
 }
 
