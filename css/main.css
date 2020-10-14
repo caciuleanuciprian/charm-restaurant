@@ -669,6 +669,40 @@ footer i{
         border: none;
     }
 
+    .nav-overlay .nav-overlay-content.active .nav-container a{
+        font-size: 48px;
+        margin: 48px 0px;
+    }
+
+    .reservation h1{
+        font-size: 48px;
+        margin-top: 30px;
+    }
+
+    .reservation form .item p{
+        font-size: 16px;
+    }
+
+    .reservation form .item input{
+        padding: 5px 5px 5px 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .reservation form .item input::placeholder{
+        font-size: 16px;
+    }
+
+    .reservation form textarea{
+        padding: 5px 5px 5px 5px;
+    }
+
+    .reservation form .btn button{
+        padding: 5px 15px;
+        width: 35%;
+        font-size: 18px;
+    }
+
 
 }
 
